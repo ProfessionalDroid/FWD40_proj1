@@ -14,6 +14,12 @@
 	- Header
 	- Main
 	- Footer
+
+- Color Pallete
+    #283739
+    #228896
+    #A9C52F
+    #F5F5F5
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -23,7 +29,9 @@
 /* Typography
 --------------------------------------------- */
 body {
-	
+	background-color: #f5f5f5;
+    color: #283739;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1,
@@ -73,7 +81,7 @@ a:visited {
 }
 
 a:hover {
-	
+	color: #a9c52f;
 }
 
 a:focus {
@@ -89,7 +97,36 @@ a:active {
 # Layout
 --------------------------------------------------------------*/
 
+/* 
+* Header
+--------------------------------------------------------------*/
+.site-header {
+    background-color: #283739;
+    text-align: center;
+    color: #f5f5f5;
+    flex: 1 1 auto;
+    font-size: larger;
+    padding: 2em 1em 0.4em;
+}
 
+.site-navigation a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f5f5f5;
+}
+
+.site-navigation a:hover {
+    color: #a9c52f;
+}
+
+.site-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.site-navigation li {
+    padding: 0.3em;
+}
 
 /*--------------------------------------------------------------
 # Components

@@ -8,25 +8,27 @@
         <link rel="stylesheet" href="/styles/style.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <!-- ADD: Site Logo and Link to index.html #top-of-page here -->
-                <a href=""><img src="" alt=""></a>
+        <header class="site-header" id="site-header">
+            <nav class="site-navigation">
+                <title>Christian Guillermo's Website</title>
+                <!-- ADD: Site Logo and Link to index.html #site-header here -->
+                 <!-- REMOVE: Name when Image is loaded -->
+                <a href="#site-header" class="logo-text"><img src="" alt="CHRISTIAN GUILLERMO"></a>
                 <ul>
-                    <li><a href="">About</a></li> <!--ADD: Link to #about-->
-                    <li><a href="">Projects</a></li> <!--ADD: Link to #projects-->
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#projects-section">Projects</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
             <h1>Christian Guillermo</h1>
-            <section class="homepage-landing">
+            <section class="homepage-landing" id="homepage-landing">
                 <img src="" alt=""> <!-- ADD: me_headshot.png -->
                 <h2>Web Developer/Designer</h2>
             </section>
             
-            <section class="about-section">
+            <section class="about-section" id="about-section">
                 <h2>ABOUT</h2>
                 <figure>
                     <blockquote>
@@ -40,7 +42,7 @@
                 </figure>
             </section>
 
-            <section class="projects-section">
+            <section class="projects-section" id="projects-section">
                 <h2>PROJECTS @ BCIT</h2>
                 <article>
                     <h3>HTML/CSS</h3>
