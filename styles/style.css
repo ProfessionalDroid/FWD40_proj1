@@ -73,24 +73,8 @@ table {
 
 /* Links
 --------------------------------------------- */
-a {
-	
-}
-
-a:visited {
-	
-}
-
 a:hover {
 	color: #a9c52f;
-}
-
-a:focus {
-	
-}
-
-a:active {
-	
 }
 
 /*--------------------------------------------------------------
@@ -110,7 +94,7 @@ a:active {
     text-align: center;
     color: #f5f5f5;
     font-size: larger;
-    padding: 1em 0 0.4em;
+    padding: 0.4em 0;
 }
 
 .site-navigation a {
@@ -192,25 +176,29 @@ a:active {
         margin-right: 1em;
         justify-content: right;
     }
+
+    .home-hgroup h2 {
+        justify-content: center;
+        font-size: xx-large;
+    }
 }
 
 /* Projects Section */
 .projects-section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.projects-section h2 {
-    flex-basis: 100%;
-}
-
-.projects-container {
-    justify-content: space-evenly;
-    align-items: stretch;
-    flex-wrap: wrap;
+    
 }
 
 .project-wrapper {
+    box-shadow: #283439 0rem 0.3125rem 0.3125rem;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project {
     position: relative;
     text-align: center;
 }
@@ -218,44 +206,38 @@ a:active {
 .project-text {
     position: absolute;
     top:0;
-    left: 25%;
-}
-
-.project img {
-    width: 300px;
-    height: 300px;
-}
-
-
-/* .project-container {
-    align-items: stretch;
-    flex: 1 2 0;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.project-wrapper {
-    
-}
-
-.project-wrapper {
-    box-shadow: #32516e 0rem 0.3125rem 0.3125rem;
-    position: relative;
-    text-align: center;
-}
-
-.project img {
-    width: 300px;
-    height: 300px;
-}
-
-.project-text {
-    background-color: #ffffff80;
-    position: absolute;
-    top: 0;
-    overflow: hidden;
     height: 100%;
     width: 100%;
-} */
+    
+    background-color: #f5f5f590;
+    color: #f5f5f5;
+    font-size: xx-large;
+    text-shadow: #283439 0.3125rem 0.3125rem 0.3125rem;
+}
+
+.project img {
+    width: 300px;
+    height: 300px;
+}
+
+@media (min-width: 321px) {
+    .projects-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5em;
+        width: 100%;
+    }
+}
+
 /* Footer
 --------------------------------------------- */
+footer {
+    background-color: #283439;
+    color: #f5f5f5;
+    padding: 1em;
+    margin-top: 3em;
+}
+
+.copyright {
+    font-weight: bold;
+}
