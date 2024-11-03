@@ -93,11 +93,6 @@ a:active {
 	
 }
 
-hgroup {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -114,7 +109,6 @@ hgroup {
     background-color: #283739;
     text-align: center;
     color: #f5f5f5;
-    flex: 1 1 auto;
     font-size: larger;
     padding: 1em 0 0.4em;
 }
@@ -145,10 +139,12 @@ hgroup {
 
 /* Homepage Landing Section */
 .home-landing-section {
-    align-self: center;
-    display: inline-block;
     margin-bottom: 4em;
     text-align: center;
+}
+
+.home-landing-section h1 {
+    margin: 0;
 }
 
 .home-landing-section img {
@@ -157,30 +153,29 @@ hgroup {
     overflow: hidden;
 }
 
-.homepage-landing-hgroup-container {
+.home-hgroup-container {
     display: flex;
-    flex: 0 1 auto;
-    justify-content: right;
-    margin-right: 1em;
 }
 
-.homepage-landing-hgroup h2 {
+.home-hgroup h2 {
     margin: 0;
     display: flex;
     align-items: baseline;
+    border: #283439 1px solid;
+    padding: 0.2em;
 }
 
-.homepage-landing-section-text-webdeveloper {
+.home-landing-section-text-webdeveloper {
     color: #228896;
 }
 
-.homepage-landing-section-text-slash {
+.home-landing-section-text-slash {
     color: orange;
     display: inline-block;
     font-size: xx-large;
     font-weight: bolder;
 }
-.homepage-landing-section-text-designer {
+.home-landing-section-text-designer {
     color: #a9c52f;
 }
 
@@ -190,6 +185,11 @@ hgroup {
     color: #f5f5f5;
 }
 
-
+@media (min-width: 321px) {
+    .home-hgroup-container {
+        margin-right: 1em;
+        justify-content: right;
+    }
+}
 /* Footer
 --------------------------------------------- */
