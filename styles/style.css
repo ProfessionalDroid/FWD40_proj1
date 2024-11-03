@@ -32,6 +32,7 @@ body {
 	background-color: #f5f5f5;
     color: #283739;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
 }
 
 h1,
@@ -92,6 +93,10 @@ a:active {
 	
 }
 
+hgroup {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /*--------------------------------------------------------------
 # Layout
@@ -111,7 +116,7 @@ a:active {
     color: #f5f5f5;
     flex: 1 1 auto;
     font-size: larger;
-    padding: 2em 1em 0.4em;
+    padding: 1em 0 0.4em;
 }
 
 .site-navigation a {
@@ -120,11 +125,8 @@ a:active {
     color: #f5f5f5;
 }
 
-.site-navigation a:hover {
-    color: #a9c52f;
-}
-
 .site-navigation ul {
+    margin: 0;
     list-style-type: none;
     padding: 0;
 }
@@ -133,35 +135,39 @@ a:active {
     padding: 0.3em;
 }
 
-
+.site-navigation a:hover,
+.site-navigation li:hover {
+    color: #a9c52f;
+    background-color: #283439;
+}
 /* Main
 --------------------------------------------- */
-.homepage-landing-section {
-    flex: 1 1 auto;
-    margin: 1em 0 1em;
-    display: flex;
+
+/* Homepage Landing Section */
+.home-landing-section {
+    align-self: center;
+    display: inline-block;
     margin-bottom: 4em;
+    text-align: center;
 }
 
-.homepage-landing-section h2 {
-    margin: 0;
+.home-landing-section img {
+    width: 75%;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
-.homepage-landing-section-container {
+.homepage-landing-hgroup-container {
     display: flex;
-    flex-wrap: nowrap;
+    flex: 0 1 auto;
     justify-content: right;
+    margin-right: 1em;
 }
 
-.homepage-landing-section-text {
-    align-items: center;
-    border: 1px solid #283739;
+.homepage-landing-hgroup h2 {
+    margin: 0;
     display: flex;
-    flex-wrap: wrap;
-    line-height: 2em;
-    margin-right: 1em;
-    padding: 0.3em;
-    justify-content: flex-end;
+    align-items: baseline;
 }
 
 .homepage-landing-section-text-webdeveloper {
@@ -170,13 +176,20 @@ a:active {
 
 .homepage-landing-section-text-slash {
     color: orange;
+    display: inline-block;
     font-size: xx-large;
     font-weight: bolder;
 }
-
 .homepage-landing-section-text-designer {
     color: #a9c52f;
 }
+
+/* About Section */
+.about-section {
+    background-color:#228896;
+    color: #f5f5f5;
+}
+
 
 /* Footer
 --------------------------------------------- */
