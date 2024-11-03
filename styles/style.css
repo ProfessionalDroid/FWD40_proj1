@@ -97,9 +97,14 @@ a:active {
 # Layout
 --------------------------------------------------------------*/
 
-/* 
-* Header
+
+/*--------------------------------------------------------------
+# Components
 --------------------------------------------------------------*/
+
+
+/* Header
+--------------------------------------------- */
 .site-header {
     background-color: #283739;
     text-align: center;
@@ -128,17 +133,50 @@ a:active {
     padding: 0.3em;
 }
 
-/*--------------------------------------------------------------
-# Components
---------------------------------------------------------------*/
-
-/* Header
---------------------------------------------- */
-
 
 /* Main
 --------------------------------------------- */
+.homepage-landing-section {
+    flex: 1 1 auto;
+    margin: 1em 0 1em;
+    display: flex;
+    margin-bottom: 4em;
+}
 
+.homepage-landing-section h2 {
+    margin: 0;
+}
+
+.homepage-landing-section-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+}
+
+.homepage-landing-section-text {
+    align-items: center;
+    border: 1px solid #283739;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2em;
+    margin-right: 1em;
+    padding: 0.3em;
+    justify-content: flex-end;
+}
+
+.homepage-landing-section-text-webdeveloper {
+    color: #228896;
+}
+
+.homepage-landing-section-text-slash {
+    color: orange;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.homepage-landing-section-text-designer {
+    color: #a9c52f;
+}
 
 /* Footer
 --------------------------------------------- */
